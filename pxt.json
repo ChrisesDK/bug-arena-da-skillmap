@@ -1,0 +1,22 @@
+{
+  "name": "bug-arena-da-skillmap",
+  "version": "0.0.1",
+  "description": "Danish Bug Arena classroom skillmap",
+  "dependencies": {
+    "device": "*"
+  },
+  "files": [
+    "README.md",
+    "skillmap.md",
+    "tutorials/introduction.md",
+    "tutorials/scribble.md",
+    "tutorials/squares.md",
+    "tutorials/back-and-forth.md",
+    "tutorials/tower.md"
+  ],
+  "testFiles": [],
+  "supportedTargets": [
+    "arcade"
+  ],
+  "preferredEditor": "tsprj"
+}
