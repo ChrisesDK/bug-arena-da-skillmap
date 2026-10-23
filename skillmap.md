@@ -31,7 +31,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Introduktion til Bug Arena
 * type: tutorial
 * description: Kod din egen bug, så den kan tænke selv med kunstig intelligens (AI), og udfordr andre AI-bugs i arenaen!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/game.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-scribble
@@ -41,7 +41,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Tilfældig algoritme
 * type: tutorial
 * description: Lav en AI-algoritme, der får din bug til at gå i tilfældige mønstre
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/scribble
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/scribble#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/random.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-tower
@@ -51,7 +51,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Tårnkamp
 * type: tutorial
 * description: Kæmp mod andre AI-bugs i tårnet, og ryk et niveau op, hver gang du vinder!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/tower-battle.gif
 * allowCodeCarryover: true
 * tags: beginner, hour of ai, hour of code
@@ -83,7 +83,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Introduktion til Bug Arena
 * type: tutorial
 * description: Kod din egen bug, så den kan tænke selv med kunstig intelligens (AI), og udfordr andre AI-bugs i arenaen!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/game.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-squares
@@ -93,7 +93,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Kvadratalgoritme
 * type: tutorial
 * description: Kod din AI-bug, så den tegner kvadrater på skærmen
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/squares
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/squares#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/squares.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-tower
@@ -103,7 +103,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Tårnkamp
 * type: tutorial
 * description: Kæmp mod andre AI-bugs i tårnet, og ryk et niveau op, hver gang du vinder!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/tower-battle.gif
 * allowCodeCarryover: true
 * tags: beginner, hour of ai, hour of code
@@ -135,7 +135,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Introduktion til Bug Arena
 * type: tutorial
 * description: Kod din egen bug, så den kan tænke selv med kunstig intelligens (AI), og udfordr andre AI-bugs i arenaen!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/introduction#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/game.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-backandforth
@@ -145,7 +145,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Frem og tilbage-algoritme
 * type: tutorial
 * description: Kod din bugs AI-algoritme, så den bevæger sig frem og tilbage på skærmen
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/back-and-forth
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/back-and-forth#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/back-and-forth.gif
 * tags: beginner, hour of ai, hour of code
 * next: bug-arena-tower
@@ -155,7 +155,7 @@ Vælg en af de tre veje for at kode en algoritme, som din AI-bug skal følge:
 * name: Tårnkamp
 * type: tutorial
 * description: Kæmp mod andre AI-bugs i tårnet, og ryk et niveau op, hver gang du vinder!
-* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower
+* url: https://github.com/ChrisesDK/bug-arena-da-skillmap/tutorials/tower#03951cd994a79483e6fa32c1400e40d008ee0c2c
 * imageUrl: /static/skillmap/bug-arena/tower-battle.gif
 * allowCodeCarryover: true
 * tags: beginner, hour of ai, hour of code
