@@ -21,13 +21,13 @@ Følg disse trin for at kode din bugs AI-algoritme ✨, så den bevæger sig fre
 
 Vores bug bevæger sig selv, men det er vigtigt, at den starter med at bevæge sig i den rigtige retning! 🗺️
 
-Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække blokken ``||hourOfAi:face towards 0||`` ud og slippe den i ``||hourOfAi:on start||``-blokken.
+Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække blokken ``||hourOfAi:vend mod 0°||`` ud og slippe den i ``||hourOfAi:ved start||``-blokken.
 
 ~hint Hvad gør denne blok?
 
 ---
 
-``||hourOfAi:Face towards||`` drejer din bug, så den peger mod en bestemt vinkel i grader, hvor:
+``||hourOfAi:vend mod||`` drejer din bug, så den peger mod en bestemt vinkel i grader, hvor:
 - 0 = højre
 - 90 = ned
 - 180 = venstre
@@ -62,7 +62,7 @@ Kan du se din bug bevæge sig mod højre?  Flot! 😊 Men hvad sker der, når di
 
 Ingenting 🥺 Så lad os tilføje noget kode, der kører, når den rammer en væg.
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:on bump wall||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:når buggen rammer en væg||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
 
 ```blockconfig.local
 hourOfAi.doAfter(1000, function () {
@@ -78,7 +78,7 @@ hourOfAi.onBumpWall(function () {
 
 ## Drej 90°
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:turn 90||``-blok og slippe den i ``||hourOfAi:on bump wall||``-blokken.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:drej 90°||``-blok og slippe den i ``||hourOfAi:når buggen rammer en væg||``-blokken.
 <br/>
 <br/>
 
@@ -111,13 +111,13 @@ Vi vil have, at vores bug drejer 90 grader, så den peger nedad ⤵️, bevæger
 
 For at gøre det skal vi bruge en blok, der venter et stykke tid ⏱️, før den drejer igen.
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:run after 1000 ms||``-blok ud og slippe den efter ``||hourOfAi:turn 90||``-blokken.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:kør efter 1000 ms||``-blok ud og slippe den efter ``||hourOfAi:drej 90°||``-blokken.
 
 ~hint Hvad gør denne blok?
 
 ---
 
-Blokken ``||hourOfAi:run after||`` kører koden inde i den efter at have ventet den valgte tid ⏳.  I dette tilfælde venter vi 1 sekund eller 1000 millisekunder (ms), før vi drejer om igen.
+Blokken ``||hourOfAi:kør efter||`` kører koden inde i den efter at have ventet den valgte tid ⏳.  I dette tilfælde venter vi 1 sekund eller 1000 millisekunder (ms), før vi drejer om igen.
 
 hint~
 
@@ -139,7 +139,7 @@ hourOfAi.onBumpWall(function () {
 
 ## ↩️ Drej nu om
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække endnu en ``||hourOfAi:turn 90||``-blok ud og slippe den i ``||hourOfAi:run after||``-blokken.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække endnu en ``||hourOfAi:drej 90°||``-blok ud og slippe den i ``||hourOfAi:kør efter||``-blokken.
 
 ```blockconfig.local
 hourOfAi.doAfter(1000, function () {
@@ -179,7 +179,7 @@ Vi skal ændre den retning, vores bug drejer i, hver gang den rammer en væg.  F
 
 Lad os først oprette en variabel.
 
-Åbn kategorien ``||Variables:Variables||`` i værktøjskassen, og klik på knappen **Opret en variabel**.  
+Åbn kategorien ``||Variables:Variabler||`` i værktøjskassen, og klik på knappen **Opret en variabel**.
 
 Giv variablen navnet **angle**, og klik på Ok.
 
@@ -199,7 +199,7 @@ hourOfAi.doAfter(1000, function () {
 
 ## Indstil variablens værdi
 
-Fra kategorien ``||Variables:Variables||`` skal du trække en ``||Variables:set angle to 0||``-blok ind i ``||hourOfAi:on start||``-blokken.
+Fra kategorien ``||Variables:Variabler||`` skal du trække en ``||Variables:sæt angle til 0||``-blok ind i ``||hourOfAi:ved start||``-blokken.
 
 Skriv **-90** som værdi for variablen angle i stedet for **0**.
 
@@ -219,7 +219,7 @@ hourOfAi.onStart(function () {
 ```
 ## Skift variablens værdi, når buggen rammer en væg
 
-Fra kategorien ``||Variables:Variables||`` skal du trække endnu en ``||Variables:set angle to 0||``-blok ind øverst i ``||hourOfAi:on bump wall||``-blokken.
+Fra kategorien ``||Variables:Variabler||`` skal du trække endnu en ``||Variables:sæt angle til 0||``-blok ind øverst i ``||hourOfAi:når buggen rammer en væg||``-blokken.
 
 ```blockconfig.local
 hourOfAi.doAfter(1000, function () {
@@ -242,11 +242,11 @@ hourOfAi.onBumpWall(function () {
 
 For at skifte frem og tilbage mellem 90 og -90 grader ganger vi med -1.
 
-Fra værktøjskategorien ``||Math:Math||`` skal du trække en ``||Math:multiplication||``-blok ud og slippe den i ``||Variables:set angle to||``-blokken i stedet for **0**.
+Fra værktøjskategorien ``||Math:Matematik||`` skal du trække en ``||Math:0 × 0||``-blok ud og slippe den i ``||Variables:sæt angle til||``-blokken i stedet for **0**.
 
-Fra kategorien ``||Variables:Variables||`` skal du trække en ``||Variables:angle||``-blok ud og slippe den i ``||Math:multiplication||``-blokken i stedet for det første **0**.
+Fra kategorien ``||Variables:Variabler||`` skal du trække en ``||Variables:angle||``-blok ud og slippe den i ``||Math:0 × 0||``-blokken i stedet for det første **0**.
 
-Skriv **-1** som den anden værdi i ``||Math:multiplication||``-blokken.
+Skriv **-1** som den anden værdi i ``||Math:0 × 0||``-blokken.
 
 ```blockconfig.local
 hourOfAi.doAfter(1000, function () {
@@ -269,7 +269,7 @@ hourOfAi.onBumpWall(function () {
 
 Nu skal vi erstatte vores drejninger på 90 grader med variablen ``||Variables:angle||``.
 
-Fra kategorien ``||Variables:Variables||`` skal du trække to ``||Variables:angle||``-blokke ud og slippe én i hver ``||hourOfAi:turn||``-blok i stedet for de **90** grader.
+Fra kategorien ``||Variables:Variabler||`` skal du trække to ``||Variables:angle||``-blokke ud og slippe én i hver ``||hourOfAi:drej||``-blok i stedet for de **90** grader.
 
 ```blockconfig.local
 hourOfAi.doAfter(1000, function () {

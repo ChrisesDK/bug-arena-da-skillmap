@@ -21,7 +21,7 @@ I denne vejledning koder vi en AI-algoritme ✨ til vores bug, så den bevæger 
 
 Lad os få vores bug til at dreje i en ny retning hvert 5. sekund.  Det gør vi med en tidsintervalblok. 🕓
 
-Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:every 5000 ms||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
+Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:hver 5000 ms||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
 
 ![Træk og slip blokke](/static/skillmap/bug-arena/dragdrop.gif "animation af at trække og slippe blokke")
 
@@ -29,7 +29,7 @@ Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi
 
 ---
 
-Blokken ``||hourOfAi:every 5000 ms||`` kører den kode, du lægger ind i den, med et bestemt millisekundinterval (ms) 🕓 – i dette tilfælde hver 5000 ms eller hvert 5. sekund.
+Blokken ``||hourOfAi:hver 5000 ms||`` kører den kode, du lægger ind i den, med et bestemt millisekundinterval (ms) 🕓 – i dette tilfælde hver 5000 ms eller hvert 5. sekund.
 
 hint~
 
@@ -50,7 +50,7 @@ hourOfAi.every(5000, function () {
 
 ## Drej din bug!
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:turn 90||``-blok ud og slippe den i ``||hourOfAi:every 5000 ms||``-blokken.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:drej 90°||``-blok ud og slippe den i ``||hourOfAi:hver 5000 ms||``-blokken.
 <br/>
 <br/>
 
@@ -82,7 +82,7 @@ hourOfAi.every(5000, function () {
 
 Hvert 5. sekund skal vores bug dreje i en ny, tilfældig retning.
 
-Fra værktøjskassen ``||Math:Math||`` skal du trække en ``||Math:pick random||``-blok og slippe den i ``||hourOfAi:turn||``-blokken, så den erstatter **90**.
+Fra værktøjskassen ``||Math:Matematik||`` skal du trække en ``||Math:vælg tilfældig fra 0 til 10||``-blok og slippe den i ``||hourOfAi:drej||``-blokken, så den erstatter **90**.
 <br/>
 <br/>
 
@@ -90,7 +90,7 @@ Fra værktøjskassen ``||Math:Math||`` skal du trække en ``||Math:pick random||
 
 ---
 
-Blokken ``||Math:pick random||`` giver et tilfældigt tal 🎲 mellem en mindsteværdi ⏬ og en størsteværdi ⏫. I dette tilfælde giver den et tilfældigt tal mellem **-180** grader (mod uret) og **+180** grader (med uret).
+Blokken ``||Math:vælg tilfældig fra 0 til 10||`` giver et tilfældigt tal 🎲 mellem en mindsteværdi ⏬ og en størsteværdi ⏫. I dette tilfælde giver den et tilfældigt tal mellem **-180** grader (mod uret) og **+180** grader (med uret).
 
 hint~
 
@@ -129,9 +129,9 @@ randint(-180, 180)
 
 Lad os tilføje kode, så vores bug drejer ↩️, når den rammer en væg.
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:on bump wall||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
+Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:når buggen rammer en væg||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
 
-Træk nu endnu en ``||hourOfAi:turn 90||``-blok og slip den i ``||hourOfAi:on bump wall||``-blokken.
+Træk nu endnu en ``||hourOfAi:drej 90°||``-blok og slip den i ``||hourOfAi:når buggen rammer en væg||``-blokken.
 
 ```blockconfig.local
 hourOfAi.every(5000, function () {
@@ -150,7 +150,7 @@ hourOfAi.onBumpWall(function () {
 
 Igen vil vi have, at vores bug drejer i en tilfældig retning, så lad os bruge funktionen 🎲 Vælg tilfældigt igen.
 
-Fra værktøjskassen ``||Math:Math||`` skal du trække endnu en ``||Math:pick random||``-blok og slippe den i ``||hourOfAi:turn||``-blokken, så den erstatter **90**.
+Fra værktøjskassen ``||Math:Matematik||`` skal du trække endnu en ``||Math:vælg tilfældig fra 0 til 10||``-blok og slippe den i ``||hourOfAi:drej||``-blokken, så den erstatter **90**.
 
 ```blockconfig.local
 hourOfAi.every(5000, function () {
