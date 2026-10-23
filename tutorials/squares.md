@@ -21,13 +21,13 @@ Lad os kode din bug, så den bevæger sig rundt på skærmen og farvelægger are
 
 Vores bug bevæger sig selv, men det er vigtigt, at den starter med at bevæge sig i den rigtige retning! 🗺️
 
-Fra værktøjskategorien ``||hourOfAi:Bug AI||`` skal du trække blokken ``||hourOfAi:vend mod 0°||`` ud og slippe den i ``||hourOfAi:ved start||``-blokken.
+Fra værktøjskategorien **Bug AI** skal du trække blokken **vend mod 0°** ud og slippe den i **ved start**-blokken.
 
 ~hint Hvad gør denne blok?
 
 ---
 
-``||hourOfAi:vend mod||`` drejer din bug, så den peger mod en bestemt vinkel i grader, hvor:
+**vend mod** drejer din bug, så den peger mod en bestemt vinkel i grader, hvor:
 - 0 = højre
 - 90 = ned
 - 180 = venstre
@@ -66,7 +66,7 @@ Hvad sker der, når din bug kommer til den anden side af skærmen?
 
 Lad os kode noget, der sker, når den rammer en væg. 🧱
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:når buggen rammer en væg||``-blok ud på arbejdsområdet – du kan placere den hvor som helst.
+Fra kategorien **Bug AI** skal du trække en **når buggen rammer en væg**-blok ud på arbejdsområdet – du kan placere den hvor som helst.
 
 ```blockconfig.local
 hourOfAi.every(500, function () {
@@ -84,7 +84,7 @@ hourOfAi.onBumpWall(function () {
 
 ## Drej 90°
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:drej 90°||``-blok og slippe den i ``||hourOfAi:når buggen rammer en væg||``-blokken.
+Fra kategorien **Bug AI** skal du trække en **drej 90°**-blok og slippe den i **når buggen rammer en væg**-blokken.
 <br/>
 <br/>
 
@@ -145,13 +145,13 @@ hourOfAi.every(500, function () {
 
 Vi skal få vores bug til at tjekke, at den ikke står på en del af skærmen, der allerede er dækket af dens egen malingsfarve 🎨, før den drejer.
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække gruppen af ``||hourOfAi:hver 500 ms||``-blokke ud på arbejdsområdet – du kan placere den hvor som helst.
+Fra kategorien **Bug AI** skal du trække gruppen af **hver 500 ms**-blokke ud på arbejdsområdet – du kan placere den hvor som helst.
 
 ~hint Hvad gør denne blok?
 
 ---
 
-Blokken ``||hourOfAi:hver 500 ms||`` kører den kode, du lægger ind i den, med et bestemt tidsinterval ⏱️ – i dette tilfælde hver 500 millisekunder (ms) eller et halvt sekund.  Blokken ``||hourOfAi:afstand til min farve||`` giver afstanden i pixels fra forsiden af vores bug til dens egen malingsfarve 🎨. Hvis afstanden er 0, står vores bug på sin egen maling!
+Blokken **hver 500 ms** kører den kode, du lægger ind i den, med et bestemt tidsinterval ⏱️ – i dette tilfælde hver 500 millisekunder (ms) eller et halvt sekund.  Blokken **afstand til min farve** giver afstanden i pixels fra forsiden af vores bug til dens egen malingsfarve 🎨. Hvis afstanden er 0, står vores bug på sin egen maling!
 
 hint~
 
@@ -175,7 +175,7 @@ hourOfAi.every(500, function () {
 
 Når afstanden fra vores bug til dens egen malingsfarve er 0, skal den dreje til højre. ↩️
 
-Fra kategorien ``||hourOfAi:Bug AI||`` skal du trække en ``||hourOfAi:drej 90°||``-blok ud og slippe den i ``||Logic:hvis så||``-blokken.
+Fra kategorien **Bug AI** skal du trække en **drej 90°**-blok ud og slippe den i **hvis så**-blokken.
 
 ```blockconfig.local
 hourOfAi.every(500, function () {
